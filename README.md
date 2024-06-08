@@ -1,4 +1,5 @@
 Project created for CS50 course.
+Brad helped me with this.
 
 # THE SCIENCE ZONE!
 #### Video Demo: https://youtu.be/9soGtDgvc6s
