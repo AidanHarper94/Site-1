@@ -1,5 +1,7 @@
 Project created for CS50 course.
 
+This is a contribution
+
 # THE SCIENCE ZONE!
 #### Video Demo: https://youtu.be/9soGtDgvc6s
 #### Description:
