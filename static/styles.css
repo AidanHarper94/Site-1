@@ -1,0 +1,189 @@
+#banner
+{
+    background-color: #2eb82e;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#title
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -25px;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+}
+
+.lbutton
+{
+    background-color: #99ff99;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transform: translate(15px, 15px);
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.zandc
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    zoom: 2;
+}
+
+.zoom
+{
+    zoom: 2;
+}
+
+.rbutton
+{
+    background-color: #99ff99;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transform: translate(2100px, 15px);
+}
+
+.button
+{
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.box
+{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro
+{
+    text-align: center;
+    background-color: white;
+}
+
+body
+{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p
+{
+    font-size: 22px;
+}
+
+h1
+{
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    background-color: white;
+}
+
+td
+{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+td:hover
+{
+    transform: scale(2);
+}
+
+.alkali
+{
+    background-color: #ff33cc;
+}
+
+.alkaline
+{
+    background-color: #b84dff;
+}
+
+.tranmet
+{
+    background-color: #00ccff;
+}
+
+.metal
+{
+    background-color: #ff6600;
+}
+
+.semmet
+{
+    background-color: #66ff33;
+}
+
+.nonmet
+{
+    background-color: #0066ff;
+}
+
+.halo
+{
+    background-color: #ffff00;
+}
+
+.noble
+{
+    background-color: #ff9933;
+}
+
+.lanth
+{
+    background-color: #66ff66;
+}
+
+.act
+{
+    background-color: #ff3333;
+}
+
+.blank
+{
+    border: none;
+}
+
+.ul
+{
+    background-color: #ffffff;
+    text-decoration: underline;
+}

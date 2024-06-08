@@ -1,0 +1,138 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Periodic Table</h1>
+    <table class="center">
+        <tr>
+            <td class="nonmet"><p>{{ elements[0].name }}</p><p>{{ elements[0].symbol }}</p><p>{{ elements[0].aw }}</p></td>
+            {% for i in range(16) %}
+            <td class="blank"></td>
+            {% endfor %}
+            <td class="noble"><p>{{ elements[1].name }}</p><p>{{ elements[1].symbol }}</p><p>{{ elements[1].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[2].name }}</p><p>{{ elements[2].symbol }}</p><p>{{ elements[2].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[3].name }}</p><p>{{ elements[3].symbol }}</p><p>{{ elements[3].aw }}</p></td>
+            {% for i in range(10) %}
+            <td class="blank"></td>
+            {% endfor %}
+            <td class="semmet"><p>{{ elements[4].name }}</p><p>{{ elements[4].symbol }}</p><p>{{ elements[4].aw }}</p></td>
+            {% for element in elements[5:8] %}
+            <td class="nonmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="halo"><p>{{ elements[8].name }}</p><p>{{ elements[8].symbol }}</p><p>{{ elements[8].aw }}</p></td>
+            <td class="noble"><p>{{ elements[9].name }}</p><p>{{ elements[9].symbol }}</p><p>{{ elements[9].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[10].name }}</p><p>{{ elements[10].symbol }}</p><p>{{ elements[10].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[11].name }}</p><p>{{ elements[11].symbol }}</p><p>{{ elements[11].aw }}</p></td>
+            {% for i in range(10) %}
+            <td class="blank"></td>
+            {% endfor %}
+            <td class="metal"><p>{{ elements[12].name }}</p><p>{{ elements[12].symbol }}</p><p>{{ elements[12].aw }}</p></td>
+            <td class="semmet"><p>{{ elements[13].name }}</p><p>{{ elements[13].symbol }}</p><p>{{ elements[13].aw }}</p></td>
+            {% for element in elements[14:16] %}
+            <td class="nonmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="halo"><p>{{ elements[16].name }}</p><p>{{ elements[16].symbol }}</p><p>{{ elements[16].aw }}</p></td>
+            <td class="noble"><p>{{ elements[17].name }}</p><p>{{ elements[17].symbol }}</p><p>{{ elements[17].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[18].name }}</p><p>{{ elements[18].symbol }}</p><p>{{ elements[18].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[19].name }}</p><p>{{ elements[19].symbol }}</p><p>{{ elements[19].aw }}</p></td>
+            {% for element in elements[20:30] %}
+            <td class="tranmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="metal"><p>{{ elements[30].name }}</p><p>{{ elements[30].symbol }}</p><p>{{ elements[30].aw }}</p></td>
+            {% for element in elements[31:33] %}
+            <td class="semmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="nonmet"><p>{{ elements[33].name }}</p><p>{{ elements[33].symbol }}</p><p>{{ elements[33].aw }}</p></td>
+            <td class="halo"><p>{{ elements[34].name }}</p><p>{{ elements[34].symbol }}</p><p>{{ elements[34].aw }}</p></td>
+            <td class="noble"><p>{{ elements[35].name }}</p><p>{{ elements[35].symbol }}</p><p>{{ elements[35].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[36].name }}</p><p>{{ elements[36].symbol }}</p><p>{{ elements[36].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[37].name }}</p><p>{{ elements[37].symbol }}</p><p>{{ elements[37].aw }}</p></td>
+            {% for element in elements[38:48] %}
+            <td class="tranmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            {% for element in elements[48:50] %}
+            <td class="metal"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            {% for element in elements[50:52] %}
+            <td class="semmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="halo"><p>{{ elements[52].name }}</p><p>{{ elements[52].symbol }}</p><p>{{ elements[52].aw }}</p></td>
+            <td class="noble"><p>{{ elements[53].name }}</p><p>{{ elements[53].symbol }}</p><p>{{ elements[53].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[54].name }}</p><p>{{ elements[54].symbol }}</p><p>{{ elements[54].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[55].name }}</p><p>{{ elements[55].symbol }}</p><p>{{ elements[55].aw }}</p></td>
+            <td class="lanth"> Lanthanide Series </td>
+            {% for element in elements[71:80] %}
+            <td class="tranmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            {% for element in elements[80:83] %}
+            <td class="metal"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="semmet"><p>{{ elements[83].name }}</p><p>{{ elements[83].symbol }}</p><p>{{ elements[83].aw }}</p></td>
+            <td class="halo"><p>{{ elements[84].name }}</p><p>{{ elements[84].symbol }}</p><p>{{ elements[84].aw }}</p></td>
+            <td class="noble"><p>{{ elements[85].name }}</p><p>{{ elements[85].symbol }}</p><p>{{ elements[85].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="alkali"><p>{{ elements[86].name }}</p><p>{{ elements[86].symbol }}</p><p>{{ elements[86].aw }}</p></td>
+            <td class="alkaline"><p>{{ elements[87].name }}</p><p>{{ elements[87].symbol }}</p><p>{{ elements[87].aw }}</p></td>
+            <td class="act"> Actinide Series </td>
+            {% for element in elements[103:112] %}
+            <td class="tranmet"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            {% for element in elements[112:116] %}
+            <td class="metal"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+            <td class="halo"><p>{{ elements[116].name }}</p><p>{{ elements[116].symbol }}</p><p>{{ elements[116].aw }}</p></td>
+            <td class="noble"><p>{{ elements[117].name }}</p><p>{{ elements[117].symbol }}</p><p>{{ elements[117].aw }}</p></td>
+        </tr>
+        <tr>
+            <td class="blank"></td>
+            <td class="blank"></td>
+            <td class="lanth">Lanthanide Series</td>
+            {% for element in elements[56:71] %}
+            <td class="lanth"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td class="blank"></td>
+            <td class="blank"></td>
+            <td class="act">Actinide Series</td>
+            {% for element in elements[88:103] %}
+            <td class="act"><p>{{ element.name }}</p><p>{{ element.symbol }}</p><p>{{ element.aw }}</p></td>
+            {% endfor %}
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td class="ul">Key:</td>
+        </tr>
+        <tr>
+            <td class="alkali">Alkali Metal</td>
+            <td class="alkaline">Alkaline Earth</td>
+            <td class="tranmet">Transition Metal</td>
+            <td class="metal">Basic Metal</td>
+            <td class="semmet">Semimetal</td>
+            <td class="nonmet">Nonmetal</td>
+            <td class="halo">Halogen</td>
+            <td class="noble">Noble Gas</td>
+            <td class="lanth">Lanthanide</td>
+            <td class="act">Actinide</td>
+        </tr>
+    </table>
+    <p></p>
+    <div class="center">
+        <p class="intro">If you need help remembering the periodic table, here's a helpful song:<p></p>
+        <iframe width="1380" height="800" src="https://www.youtube.com/embed/rz4Dd1I_fX0?si=xJJ_c4JRhfq1Qztg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+{% endblock %}

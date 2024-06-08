@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="intro">
+    <h2>
+        Welcome to the Science Zone!
+    </h2>
+    <p>
+        Here you can learn how to create buffers at varying strengths and volumes, learn more about the periodic table, and how to calculate the molecular weight from a given formula. All of these applications are used by scientists in every lab around the world!
+    </p>
+    <p>
+        I hope you enjoy the science zone!
+    </p>
+</div>
+
+<hr>
+<h1>Select an app</h1>
+<form class="zandc" action="/", method="post">
+    <input class="button" type="submit" value="Buffer Calculator" name="buffer">
+<hr>
+    <input class="button" type="submit" value="Periodic Table" name="table">
+<hr>
+    <input class="button" type="submit" value="Molecular Weight Calculator" name="weight">
+</form>
+{% endblock %}

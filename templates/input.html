@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Add your buffer!</h1>
+    <form class="zoom" action="/input" method="post">
+        Chemical Name: <input required autcomplete="off" name="name" type="text">
+        <p></p>
+        Molecular Weight (g/mol): <input required autcomplete="off" name="mw" type="text">
+        <p></p>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}

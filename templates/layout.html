@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Science Site</title>
+    </head>
+    <body>
+        <div id="banner">
+            <a class="lbutton" href="/">Homepage</a>
+            <a class="rbutton" href="/buffer">Buffer Calculator</a>
+            <a class="rbutton" href="/ptable">Periodic Table</a>
+            <a class="rbutton" href="/weight">MW Calculator</a>
+            <div id="title">Science Zone!</div>
+        </div>
+        <hr>
+        {% block body %}{% endblock %}
+    </body>
+    <footer>
+        This website is designed solely for my final project in the CS50 course.
+    </footer>
+</html>

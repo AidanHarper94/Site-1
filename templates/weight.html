@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<script>
+    function append()
+    {
+        var insert = document.getElementById("here");
+
+        var p = document.createElement("p");
+        document.getElementById("form").insertBefore(p, insert);
+
+        // ogdd = Original DropDown
+        var ogdd = document.getElementById("dropdown");
+        var clone = ogdd.cloneNode(true);
+        clone.setAttribute("name", "formula");
+
+        var text1 = document.createTextNode("Element: ");
+        document.getElementById("form").insertBefore(text1, insert);
+        document.getElementById("form").insertBefore(clone, insert);
+
+        var amount = document.createElement("input");
+        amount.setAttribute("name", "amount");
+        amount.setAttribute("type", "number");
+        amount.setAttribute("min", "1");
+        amount.setAttribute("required", "");
+        amount.setAttribute("step", "1");
+        var text2 = document.createTextNode(" Amount: ");
+        document.getElementById("form").insertBefore(text2, insert);
+        document.getElementById("form").insertBefore(amount, insert);
+
+        var p = document.createElement("p");
+        document.getElementById("form").insertBefore(p, insert);
+    }
+</script>
+
+    <h1>Molecular Weight Calculator</h1>
+
+<form class="zoom" action="/weight" method="post" id="form">
+    <div id="dynamic-elements">
+        <p>
+            Element:
+            <select required id="dropdown" name="formula">
+                <option disabled selected value="">Select an element</option>
+                {% for symbol in symbols %}
+                <option value="{{ symbol.symbol }}">{{ symbol.symbol }}</option>
+                {% endfor %}
+            </select>
+            Amount: <input required autocomplete="off" name="amount" min="1" step="1" type="number">
+        </p>
+    </div>
+    <p></p>
+    <button id="here" type="button" onclick="append()">Add to formula</button>
+    <p></p>
+    <button type="submit">Calculate</button>
+</form>
+{% endblock %}

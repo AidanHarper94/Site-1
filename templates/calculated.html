@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Buffer Calculator Results</h1>
+
+    <div class="box zoom">
+        <p>
+            Weigh {{ weight }}g of {{ chemical }} into {{ vol }}L of water and dissolve till completion.
+        </p>
+        <p></p>
+        <p>
+            This will make a {{ chemical }} buffer at {{ mol }}M.
+        </p>
+    </div>
+
+{% endblock %}

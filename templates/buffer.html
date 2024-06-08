@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Buffer Calculator</h1>
+    <form class="zoom" action="/buffer" method="post">
+        <select required id="dropdown" name="chemical">
+            <option disabled selected value="">Select a chemical</option>
+            {% for chemical in chemicals %}
+            <option value="{{ chemical }}">{{ chemical }}</option>
+            {% endfor %}
+        </select>
+        <p></p>
+        Molarity (M) : <input required autocomplete="off" name="mol" min="0.001" step="0.001" type="number">
+        <p></p>
+        Volume (L) : <input required autocomplete="off" name="vol" min="0.001" step="0.001" type="number">
+        <p></p>
+        <button type="submit">Calculate</button>
+        <p></p>
+    </form>
+    <form class="zoom" action="/input" method="get"><div>Don't see the buffer you need? Add it here! <input type="submit" value="Add to calculator"></div></form>
+
+{% endblock %}
